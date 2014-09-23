@@ -1,0 +1,93 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:tools="http://schemas.android.com/tools"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:id="@+id/tablelayout"
+        android:stretchColumns="1"
+        android:shrinkColumns="1"
+       	android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:paddingBottom="@dimen/activity_vertical_margin"
+	    android:paddingLeft="@dimen/activity_horizontal_margin"
+	    android:paddingRight="@dimen/activity_horizontal_margin"
+	    android:paddingTop="@dimen/activity_vertical_margin"
+	    android:background="#000000" 
+	    tools:context="com.example.earthquakeapiviewer.DisplayEarthquakeActivity" >
+	    <TextView
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/location_tv"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:textColor="#FFFFFF" />
+	    <TextView
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/date_tv"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="#FFFFFF"
+                android:gravity="center" />
+
+        <TableRow
+            android:id="@+id/tablerow1">
+
+            <TextView
+                android:text="Magnitude: "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_column="0"
+                android:id="@+id/magnitudelabel_tv"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="#FFFFFF" />
+           <TextView
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_column="1"
+                android:id="@+id/magnitude_tv"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="#FFFFFF"
+                android:gravity="start"  />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tablerow2"
+            android:layout_width="match_parent">
+            <TextView
+                android:text="Depth: "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_column="0"
+                android:id="@+id/depthlabel_tv"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="#FFFFFF" />
+            <TextView
+                android:id="@+id/depth_tv"
+                android:layout_width="match_parent"
+                android:layout_column="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium" 
+                android:textColor="#FFFFFF"
+                android:gravity="start" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tablerow3">
+            <TextView
+                android:text="Source:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_column="0"
+                android:id="@+id/srclabel_tv"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="#FFFFFF" />
+            <TextView
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_column="1"
+                android:id="@+id/src_tv"
+                android:textColor="#FFFFFF"/>
+        </TableRow>
+</TableLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Earthquake Viewer</string>
+    <string name="action_settings">Settings</string>
+    <string name="empty_list">No Earthquakes Found!</string>
+    <string name="title_activity_display_earthquake">Full Earthquake Info.</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>
